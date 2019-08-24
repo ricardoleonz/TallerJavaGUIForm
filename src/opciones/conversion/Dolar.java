@@ -25,6 +25,7 @@ public class Dolar extends Frame {
     protected JLabel lblIngresarDolar;
     protected JButton btnSalirConversion;
     private JButton btnConvertirDolar;
+    private JLabel lblresultadoPesos;
 
     public Dolar(){
         DecimalFormatSymbols simbolo = new DecimalFormatSymbols();
@@ -50,6 +51,7 @@ public class Dolar extends Frame {
                 datos(txtDolar.getText());
                 lblDolarEuro.setText(String.valueOf(formateador.format(conversionMonedasLogica.convertirDolarEuro())));
                 lblDolarYen.setText(String.valueOf(formateador.format(conversionMonedasLogica.convertirDolarYen())));
+                lblresultadoPesos.setText(String.valueOf(formateador.format(conversionMonedasLogica.convertirDolarPesos())));
 
         });
     }
@@ -62,6 +64,7 @@ public class Dolar extends Frame {
         conversionMonedasLogica.setDolar(Double.parseDouble(valor1));
         lblDolarEuro.setVisible(true);
         lblDolarYen.setVisible(true);
+        lblresultadoPesos.setVisible(true);
     }
 
 }

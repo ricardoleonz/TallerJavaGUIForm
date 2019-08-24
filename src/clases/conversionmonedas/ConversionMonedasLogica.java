@@ -1,5 +1,6 @@
 package clases.conversionmonedas;
 import static clases.constantes.dobles.Dobles.*;
+import static clases.constantes.enteros.Enteros.*;
 
 public class ConversionMonedasLogica extends ConversionMonedas {
 
@@ -26,6 +27,17 @@ public class ConversionMonedasLogica extends ConversionMonedas {
     public double convertirYenEuro() {
         return (this.getYen()*CERO_OCHO_CUATRO.getValor());
     }
+
+    public double convertirDolarPesos(){
+        return (this.getDolar()*TRESMIL.getValores());
+    }
+    public double convertirEuroPesos() {
+        return (this.getEuro()*TRESMILQUINIENTOS.getValores());
+    }
+    public double convertirYenPesos(){
+        return (this.getYen()*MILQUINIENTOS.getValores());
+    }
+
 
 
 }

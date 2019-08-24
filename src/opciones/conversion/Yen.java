@@ -21,6 +21,7 @@ public class Yen extends Frame {
     protected JLabel lblIngresarYen;
     protected JLabel lblYenDolar;
     protected JLabel lblYenEuro;
+    private JLabel lblYenPesos;
 
     public Yen() {
         DecimalFormatSymbols simbolo = new DecimalFormatSymbols();
@@ -44,6 +45,7 @@ public class Yen extends Frame {
             datos(txtYen.getText());
             lblYenDolar.setText(String.valueOf(formateador.format(conversionMonedasLogica.convertirYenDolar())));
             lblYenEuro.setText(String.valueOf(formateador.format(conversionMonedasLogica.convertirYenEuro())));
+            lblYenPesos.setText(String.valueOf(formateador.format(conversionMonedasLogica.convertirYenPesos())));
         });
     }
     public void esconderVentana(){
@@ -54,5 +56,6 @@ public class Yen extends Frame {
         conversionMonedasLogica.setYen(Double.parseDouble(valor1));
         lblYenDolar.setVisible(true);
         lblYenEuro.setVisible(true);
+        lblYenPesos.setVisible(true);
     }
 }

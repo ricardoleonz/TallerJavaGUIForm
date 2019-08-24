@@ -21,6 +21,7 @@ public class Euro extends Frame {
     protected JButton btnVolverE;
     protected JLabel lblEuroDolar;
     protected JLabel lblEuroYen;
+    private JLabel lblEuroPesos;
 
     public Euro(){
         DecimalFormatSymbols simbolo = new DecimalFormatSymbols();
@@ -44,6 +45,7 @@ public class Euro extends Frame {
             datos(txtEuro.getText());
             lblEuroDolar.setText(String.valueOf(formateador.format(conversionMonedasLogica.convertirEuroDolar())));
             lblEuroYen.setText(String.valueOf(formateador.format(conversionMonedasLogica.convertirEuroYen())));
+            lblEuroPesos.setText(String.valueOf(formateador.format(conversionMonedasLogica.convertirEuroPesos())));
         });
     }
     public void esconderVentana(){
@@ -53,5 +55,6 @@ public class Euro extends Frame {
         conversionMonedasLogica.setEuro(Double.parseDouble(valor1));
         lblEuroDolar.setVisible(true);
         lblEuroYen.setVisible(true);
+        lblEuroPesos.setVisible(true);
     }
 }

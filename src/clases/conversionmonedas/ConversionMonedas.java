@@ -8,11 +8,16 @@ public class ConversionMonedas {
     private double euro;
     private double yen;
 
+
+
+
     public ConversionMonedas(){
         this.dolar = CERO.getValores();
         this.euro =CERO.getValores();
         this.yen = CERO.getValores();
+
     }
+
 
     public double getEuro() {
         return euro;

@@ -37,8 +37,6 @@ Z
 *src/clases/constantes/enteros/enteros.java,3\1\31cbd70f58ec79c8ca8b87d945f0ce6ffed97d86
 X
 (src/clases/constantes/dobles/Dobles.java,8\4\8401f70e0ee5f89ef3070336d800e3b5ebfc3281
-X
-(src/clases/constantes/string/String.java,0\c\0cbe77ad6f0be88b4ac3a6d9fea7381c7487d489
 Z
 *src/clases/constantes/enteros/Enteros.java,b\7\b776a1f2bd7ef86264438f2576c58222a8ced1f6
 Z
